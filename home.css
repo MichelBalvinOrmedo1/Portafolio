@@ -1,0 +1,59 @@
+  /* Estilos para el texto */
+  #animatedText {
+    overflow: hidden;
+    white-space: nowrap; /* Evita saltos de línea */
+    margin: 0 auto; /* Centra el texto */
+    letter-spacing: .15em; /* Espacio entre letras */
+    color: green;
+  }
+
+  /* Cursor */
+  #animatedText:after {
+    content: "|";
+    color: orange;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: blink-caret .75s step-end infinite;
+  }
+
+  /* Animación de escritura */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* Animación del cursor */
+  @keyframes blink-caret {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+.main
+{
+    height: 100%;
+    margin-top: 8.4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0vh;
+}
+
+.home{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: solid white 2px;
+
+}
+.about{
+    
+    height: 92vh;
+    border: solid white 2px;
+
+}

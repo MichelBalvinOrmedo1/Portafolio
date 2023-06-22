@@ -4,7 +4,15 @@
     --tw-bg-opacity: 1;
     background-color: rgb(15 23 42/var(--tw-bg-opacity));
   }
-  
+  body{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar{
+    display: block;
+    border: solid red 2px;
+  }
 
   .special-color-nav-li {
     color: rgb(0, 255, 0);
