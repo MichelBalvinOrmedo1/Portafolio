@@ -1,0 +1,135 @@
+.about {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .about-hijo {
+    background-color: red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: solid white 2px;
+  }
+  
+  .infousuario {
+    text-align: center;
+  }
+  
+  .avatar {
+    margin-top: 20px;
+    border-radius: 50%;
+  }
+  
+  .nome {
+    margin: 0;
+    color: #747c81;
+    margin-top: 20px;
+  }
+  
+  .label {
+    margin-top: 15px;
+  }
+  
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .about-title {
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(0, 255, 0);
+  }
+  
+  .about-description {
+    font-size: 1.5rem;
+    color: rgb(218, 255, 236);
+    font-weight: bold;
+  }
+  
+  .infousuario {
+    position: relative;
+    line-height: 64px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid gold;
+    border-radius: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  
+  .infousuario:hover {
+    filter: contrast(1.1);
+  }
+  
+  .infousuario:active {
+    filter: contrast(0.9);
+  }
+  
+  .infousuario::before,
+  .infousuario::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid gold;
+    transition: all 0.5s;
+    animation: clippath 3s infinite linear;
+    border-radius: 10px;
+  }
+  
+  .infousuario::after {
+    animation: clippath 3s infinite -1.5s linear;
+  }
+  
+  @keyframes clippath {
+    0%, 100% {
+      clip-path: inset(0 0 98% 0);
+    }
+    25% {
+      clip-path: inset(0 98% 0 0);
+    }
+    50% {
+      clip-path: inset(98% 0 0 0);
+    }
+    75% {
+      clip-path: inset(0 0 0 98%);
+    }
+  }
+  
+  .bg::before {
+    background: rgba(255, 215, 0, 0.5);
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .about-hijo {
+      height: auto;
+    }
+  
+    .about-container {
+      flex-direction: column;
+    }
+  }
+  

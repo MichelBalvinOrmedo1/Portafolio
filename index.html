@@ -13,6 +13,7 @@
             background-color: red; /* Color deseado para la sección activa */
         }
     </style>
+    <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="home.css">
     <title>Document</title>
@@ -54,6 +55,7 @@
   </nav>
   
   <main class="scrollspy-example bg-body-tertiary p-3 rounded-2">
+    
     <section id="home" class="home d-flex align-items-center justify-content-center">
       <div class="text-center">
         <h4>Hey! I am</h4>
@@ -61,14 +63,35 @@
         <h2>I'm a Software Developer</h2>
       </div>
     </section>
-    <div id="about"></div>
-    <section  class="about">
-      <div>
-        <h1>Hola</h1>
+    
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-info">
+              <h2 class="about-title">Welcome</h2>
+              <p class="about-description">
+                ¡Hola! Soy Michel, un desarrollador web especializado en Angular y con conocimientos en Spring Boot.
+                Estoy aquí para crear soluciones web robustas y funcionales.
+                Si necesitas ayuda con tu proyecto, no dudes en contactarme.
+                Estoy emocionado de colaborar contigo y llevar tus ideas al siguiente nivel.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="infousuario">
+              <img class="avatar" src="https://placehold.it/200x200" alt="">
+              <h2 class="nome">
+                Nombre del Usuario
+              </h2>
+              <img class="label" src="https://cursos.alura.com.br/images/gnarus/profile/label-Moderador.svg" alt="">
+            </div>
+          </div>
+        </div>
       </div>
-      <div></div>
     </section>
   </main>
+  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="home.js"></script> 
